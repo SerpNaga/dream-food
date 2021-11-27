@@ -6,10 +6,9 @@ const stylus = require("stylus")
 const app = express()
 
 app.use(stylus.middleware({
-    src: "./public",
+    src: "./public/styles",
     dest: "./public"
 }))
-
 
 app.set("views", "./server/views")
 app.set("view engine", "pug")
