@@ -20,11 +20,16 @@ for (let i =1; i<data.length;i++){
 }
 console.log(products)
 
-
 router.get("/", (req, res)=>{
     res.render("index", {
         title: "Здоровый образ жизни",
-        products: products
+        products: products,
+        tableCpations: data[0]
+    })
+})
+router.get("/vegetables", (req, res)=>{
+    res.render("category", {
+        title:"Овощи"
     })
 })
 

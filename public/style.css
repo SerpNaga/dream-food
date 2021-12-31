@@ -15,3 +15,6 @@ body>h1 {
 body:hover {
   background-color: #eee;
 }
+.dark {
+  background: #8b0000;
+}

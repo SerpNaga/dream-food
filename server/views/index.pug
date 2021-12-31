@@ -6,3 +6,15 @@ block body
             li
                 each el, key in pr 
                     span #{key}: #{el},&#032;
+    form#addProduct(method="POST")
+        input(type="text" name="name" placeholder="Название продукта")
+        select(name="type")
+            option(value="Овощи") Овощи
+            option(value="Фрукты") Фрукты
+            option(value="Ягоды") Ягоды
+        input(type="number" step=0.1 min=0 name="b" placeholder="Белки")
+        input(type="number" step=0.1 min=0 name="h" placeholder="Жиры")
+        input(type="number" step=0.1 min=0 name="u" placeholder="Углеводы")
+        input(type="number" step=0.1 min=0 name="kcal" placeholder="Kcal")
+        button(type="submit") Добавить
+    script(src="/scripts/addProduct.js")
